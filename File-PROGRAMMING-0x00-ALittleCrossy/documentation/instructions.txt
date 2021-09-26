@@ -1,0 +1,35 @@
+CHALLENGE INSTRUCTION:
+----------------------
+                           [ ]
+                           [ ]
+                  [ ]      [ ]
+[ ][ ][ ][ ][ ][ ][n][ ]   [ ]
+                  [ ]   [ ][o][ ][ ][ ][ ][ ][ ]
+                  [ ]      [ ]
+            [ ]   [ ]      [ ]   [ ]
+            [@]   [@]      [@]   [@]
+            [ ]   [ ]      [ ]   [ ]
+   [ ][ ][ ][i][ ][t][ ][ ][ ]   [ ]
+            [ ]   [ ]      [ ]   [ ]
+            [ ]            [ ]   [ ]
+            [ ]   [ ][ ][ ][n][ ][r][ ][ ][ ][ ][ ][ ][ ]
+            [ ]                  [ ]
+            [ ]         [ ][ ][ ][p][ ][ ][ ][ ][ ][ ][ ][ ]
+            [ ]                  [ ]
+                                 [ ]
+            [ ][ ][ ][ ][ ][ ][ ][n][ ][ ][ ][ ][ ][ ][ ]
+                                 [ ]
+
+Fill out the crossword puzzle using the provided wordlist.txt to retrieve the flag.
+
+STRING: Concatenate the "@"s from left to right and the word "monkey" right after it.
+
+FLAG INFORMATION:
+-----------------
+Generate the flag using the following command:
+echo -n "@@@@monkey" | sha256sum | cut -b1-10
+
+Wrap the string inside the flag format.
+
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}

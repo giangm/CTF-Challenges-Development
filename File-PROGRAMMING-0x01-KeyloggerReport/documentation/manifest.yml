@@ -1,0 +1,40 @@
+#######################################
+# CTFd Parameters
+#######################################
+
+challenge:
+  # challenge name as it should appear to the players - required
+  name: "0x01 KeyloggerReport"
+
+  # challenge author - required
+  author: Minh Giang
+
+  # challenge category as it should appear to the players - required
+  category: Prog
+
+  # challenge value
+  value: 100
+
+  # all viable solutions to a challenge (i.e. what the student 
+  # enters in CTFd) - in depth explanations of the solution 
+  # should be placed in documentation/solution.txt. Flags are 
+  # case-sensitive but can be made case-insensitive through 
+  # the CTFd GUI.
+  flags:                             
+    - "monkeyCTF{my_v3ry_s3cur3_pa55w0rd}"
+
+  # helpful tags to focus the player's attention
+  tags:                               
+    - beginner
+
+  # standard or dynamic
+  type: standard
+
+  # hidden or visible - better to keep hidden by default
+  state: hidden
+
+  # challenge version
+  version: 1.0  
+ 
+  # hint_cost if a hint is provided for the challenge - if not remove key
+  hint_cost: 0

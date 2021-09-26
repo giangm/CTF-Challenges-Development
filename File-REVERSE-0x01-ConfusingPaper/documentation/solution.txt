@@ -1,0 +1,25 @@
+CHALLENGE SOLUTION:
+-------------------
+Reverse the plus and minus sign in the if and else bodies. 
+
+FLAG: monkeyCTF{v3ry_w3ak_c1ph3r!}
+
+PYTHON SOLUTION:
+----------------
+
+cipher = [114, 56, 108, 128, 87, 128, 41, 108, 95, 108, 85, 64, 96, 121, 33, 133, 13]
+
+shift = 4
+
+i = 0
+while i < len(cipher):
+    if i % 2 != 0:
+        cipher[i] = cipher[i] - shift
+    else:
+        cipher[i] = cipher[i] + shift
+
+    shift += 1
+    i += 1
+
+for c in cipher:
+    print(chr(c), end="")

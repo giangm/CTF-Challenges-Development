@@ -1,0 +1,12 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+STORY HERE...
+
+HOW TO NETCAT:
+-----------
+nc (hostname) (port)
+
+CHALLENGE INFO:
+---------------
+hostname:	HOSTNAME_HERE 
+port:		PORT_HERE

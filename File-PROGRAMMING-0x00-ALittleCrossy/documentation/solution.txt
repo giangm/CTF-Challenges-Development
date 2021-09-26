@@ -1,0 +1,109 @@
+CHALLENGE SOLUTION:
+-------------------
+                           [a]
+                           [u]
+                  [i]      [t]
+[s][n][i][f][f][i][n][g]   [h]
+                  [t]   [h][o][n][e][y][p][o][t]
+                  [e]      [r]
+            [m]   [g]      [i]   [e]
+            [i]   [r]      [z]   [a]
+            [t]   [i]      [a]   [v]
+   [p][l][a][i][n][t][e][x][t]   [e]
+            [g]   [y]      [i]   [s]
+            [a]            [o]   [d]
+            [t]   [v][u][l][n][e][r][a][b][i][l][i][t][y]
+            [i]                  [o]
+            [o]         [c][r][y][p][t][o][g][r][a][p][h][y]
+            [n]                  [p]
+                                 [i]
+            [c][o][n][f][i][d][e][n][t][i][a][l][i][t][y]
+                                 [g]
+
+integrity
+confidentiality
+eavesdropping
+honeypot
+authorization
+vulnerability
+mitigation
+cryptography
+plaintext
+sniffing
+
+
+PYTHON CODE SOLUTION:
+---------------------
+
+# A dictionary that will contain possible words
+combinations = {"row_1": [], "row_2": [], "row_3": [], "row_4": [], "row_5": [], "row_6": [],
+                "col_1": [], "col_2": [], "col_3": [], "col_4": []}
+
+# Read wordlist.txt
+with open("wordlist.txt", "r") as wordlist:
+
+    # Iterate through each word in the list
+    for word in wordlist:
+
+        """
+                                   [ ]
+                                   [ ]
+                          [ ]      [ ]
+        [ ][ ][ ][ ][ ][ ][n][ ]   [ ]
+                          [ ]   [ ][o][ ][ ][ ][ ][ ][ ]
+                          [ ]      [ ]
+                    [ ]   [ ]      [ ]   [ ]
+                    [@]   [@]      [@]   [@]
+                    [ ]   [ ]      [ ]   [ ]
+           [ ][ ][ ][i][ ][t][ ][ ][ ]   [ ]
+                    [ ]   [ ]      [ ]   [ ]
+                    [ ]            [ ]   [ ]
+                    [ ]   [ ][ ][ ][n][ ][r][ ][ ][ ][ ][ ][ ][ ]
+                    [ ]                  [ ]
+                    [ ]         [ ][ ][ ][p][ ][ ][ ][ ][ ][ ][ ][ ]
+                    [ ]                  [ ]
+                                         [ ]
+                    [ ][ ][ ][ ][ ][ ][ ][n][ ][ ][ ][ ][ ][ ][ ]
+                                         [ ]
+
+
+        Compare each word by length and a letter that was already given in the crossword. 
+        If the word meets the criteria, append the word into a dictionary.
+
+        Example (1st IF statement): Let's consider the first horizontal word as "row_1". Since row_1 is 8 characters
+        in length and the 7th character is "n", append any word that is 8 characters in length and has "n"
+        as its 7th character.
+        """
+
+        if len(word.strip()) == 8 and word[6] == "n":
+            combinations["row_1"].append(word.strip())
+
+        elif len(word.strip()) == 8 and word[1] == "o":
+            combinations["row_2"].append(word.strip())
+
+        elif len(word.strip()) == 9 and word[3] == "i" and word[5] == "t":
+            combinations["row_3"].append(word.strip())
+
+        elif len(word.strip()) == 13 and word[3] == "n" and word[5] == "r":
+            combinations["row_4"].append(word.strip())
+
+        elif len(word.strip()) == 12 and word[3] == "p":
+            combinations["row_5"].append(word.strip())
+
+        elif len(word.strip()) == 15 and word[7] == "n":
+            combinations["row_6"].append(word.strip())
+
+        elif len(word.strip()) == 10 and word[3] == "i":
+            combinations["col_1"].append(word.strip())
+
+        elif len(word.strip()) == 9 and word[1] == "n" and word[7] == "t":
+            combinations["col_2"].append(word.strip())
+
+        elif len(word.strip()) == 13 and word[4] == "o" and word[12] == "n":
+            combinations["col_3"].append(word.strip())
+
+        elif len(word.strip()) == 13 and word[6] == "r" and word[8] == "p" and word[11] == "n":
+            combinations["col_4"].append(word.strip())
+
+# Print possible words
+print(combinations)

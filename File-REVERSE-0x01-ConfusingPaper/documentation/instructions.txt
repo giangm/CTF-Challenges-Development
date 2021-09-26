@@ -1,0 +1,6 @@
+CHALLENGE DESCRIPTION:
+----------------------
+We have found a blank sheet of paper on one of the suspicious monkey's desk. After shining it with UV light, some writing was shown.
+The content is 114 56 108 128 87 128 41 108 95 108 85 64 96 121 33 133 13, along with the handwritten code.
+
+The code is attached down below. Can you figure out what it means?
