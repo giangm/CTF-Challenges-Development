@@ -1,0 +1,4 @@
+CHALLENGE DESCRIPTION:
+----------------------
+Seems like a SHA256 collision is used to authenticate users. 
+Identify the credentials to retrieve the flag.
