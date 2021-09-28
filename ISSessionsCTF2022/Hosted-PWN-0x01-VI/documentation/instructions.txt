@@ -1,0 +1,24 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+We managed to retrieve SSH credentials (monkey:kingkong), through a brute force attack.
+We know that the system was used to develop a login page for a startup.
+SSH onto the system and see if you can find anything valuable.
+
+HOW TO SSH:
+-----------
+ssh -p (port) (user)@(hostname)
+Enter password at prompt...
+
+CHALLENGE INFO:
+---------------
+username:	monkey
+hostname:	HOSTNAME_HERE 
+port:		PORT_HERE
+password:	kingkong
+
+FLAG INFORMATION:
+-----------------
+Wrap the string inside the flag format.
+
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}
