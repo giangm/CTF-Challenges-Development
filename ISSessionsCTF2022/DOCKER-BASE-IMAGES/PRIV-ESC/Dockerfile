@@ -51,7 +51,6 @@ RUN groupadd -g 6666 monkey && \
     $(python3 -c 'import crypt; print(crypt.crypt("monkey", crypt.mksalt(crypt.METHOD_SHA512)))') && \
     echo "AllowUsers monkey" >> /etc/ssh/sshd_config
 
-
 ## Launch Supervisor
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
