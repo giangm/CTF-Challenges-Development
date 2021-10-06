@@ -1,0 +1,15 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+The flag is located in the user's home directory, go get the flag.
+
+HOW TO SSH:
+-----------
+ssh -p (port) (user)@(hostname)
+Enter password at prompt...
+
+CHALLENGE INFO:
+---------------
+username:   USERNAME_HERE
+hostname:	HOSTNAME_HERE 
+port:		PORT_HERE
+password:	PASSWORD_HERE
