@@ -1,0 +1,22 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+The flag is located on the system. Get root privilege and then retrieve the flag.
+
+HOW TO SSH:
+-----------
+ssh -p (port) (user)@(hostname)
+Enter password at prompt...
+
+CHALLENGE INFO:
+---------------
+username:   monkey
+hostname:	HOSTNAME_HERE 
+port:		PORT_HERE
+password:	kingkong
+
+FLAG INFORMATION:
+-----------------
+Wrap the string inside the flag format.
+
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}
