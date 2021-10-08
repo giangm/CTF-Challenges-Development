@@ -1,0 +1,11 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+A fellow monkey has compressed one of his important files with a password, with the intentions of securing it.
+Unfortunately, he has forgotten the password to open the archive. Can you help open the archive?
+
+FLAG INFORMATION:
+-----------------
+Wrap the string inside the flag format.
+
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}
