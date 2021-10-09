@@ -1,0 +1,28 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+Challenge description here...
+
+HOW TO SSH:
+-----------
+ssh -p (port) (user)@(hostname)
+Enter password at prompt...
+
+HOW TO NETCAT:
+--------------
+nc (ip) (port)
+
+CHALLENGE INFO:
+---------------
+hostname:    HOSTNAME_HERE
+port:        PORT_HERE
+password:    PASSWORD_HERE
+
+FLAG INFORMATION:
+-----------------
+Generate the flag using the following command:
+echo -n 'STRING' | sha256sum | cut -b1-10
+
+Wrap the string inside the flag format.
+
+Flag format: monkeyCTF{}
+Example: monkeyCTF{THISISTHEFLAG}

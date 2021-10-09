@@ -1,0 +1,26 @@
+CHALLENGE SOLUTION:
+-------------------
+git clone https://github.com/TryCatchHCF/PacketWhisper.git
+
+mv challenge.pcap PacketWhisper
+
+cd PacketWhisper
+
+python2 packetWhisper.py
+Selection: 2
+
+## For linux/Unix/MacOS
+Select OS [1 or 2]: 1
+
+## For Windows
+Select OS [1 or 2]: 2
+
+Enter cipher #: 3
+
+<Enter>
+
+<CTRL-C>
+
+cat decloaked.file
+
+FLAG: monkeyCTF{5t3a1thy_3xfi1trati0n}

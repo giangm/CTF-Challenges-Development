@@ -1,0 +1,5 @@
+CHALLENGE DESCRIPTION:
+-----------------------
+DNS.CLOUDFRONT: PACKET! PACKET! SENDING PACKETS! PACKET! PACKET! 
+
+ATTACKER: WHISPER!! Packet, stop being so loud!
