@@ -1,0 +1,7 @@
+CHALLNEGE INSTRUCTION:
+----------------------
+People are apparently able to view my secret file located outside the application. Could you figure out how that's possible?
+
+CHALLENGE URL:
+--------------
+http://localhost/emails?file=emails.txt

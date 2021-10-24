@@ -1,0 +1,7 @@
+CHALLNEGE INSTRUCTION:
+----------------------
+HELP NEEDED! We think our login page is vulnerable. Could you please help us assess it to prevent unauthorized access?
+
+CHALLENGE URL:
+--------------
+http://localhost/login

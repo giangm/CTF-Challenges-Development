@@ -1,0 +1,7 @@
+CHALLNEGE INSTRUCTION:
+----------------------
+Seems like everyone is able to get our credentials stored in the database. Could you help us figure out how they are doing it?
+
+CHALLENGE URL:
+--------------
+http://localhost/banana?id=0
