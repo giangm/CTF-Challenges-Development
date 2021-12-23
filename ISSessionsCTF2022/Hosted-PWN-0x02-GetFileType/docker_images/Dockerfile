@@ -21,16 +21,16 @@ RUN groupadd -g 6666 monkey && \
     useradd -m -d /home/monkey -s /bin/bash -g 6666 -G monkey -u 6666 monkey -p \
     $(python3 -c 'import crypt; print(crypt.crypt("monkey", crypt.mksalt(crypt.METHOD_SHA512)))')
 
-CMD ["nsjail",			        \
-        "-Ml",			        \
-        "--hostname", "monkey", 	\
+CMD ["nsjail",			                \
+        "-Ml",			                \
+        "--hostname", "monkey",       	\
         "--user", "monkey",             \
         "--group", "monkey",            \
         "--port", "6666",   	        \
         "--skip_setsid",                \
-        "--chroot", "/",        	\
+        "--chroot", "/",        	    \
         "--cwd", "/home/monkey",    	\
-        "--",		         	\
+        "--",		         	        \
         "/usr/bin/python3",             \
-        "app.py"	                \
+        "app.py"	                    \
 ]

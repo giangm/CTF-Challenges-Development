@@ -1,1 +1,1 @@
-monkeyCTF{http_tran5f3r_t0_wg3t_f!13}
+monkeyCTF{badsudoprivs}

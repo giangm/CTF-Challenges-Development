@@ -32,6 +32,12 @@ def index():
     if request.method == "GET":
         return render_template("index.html", b=b, size=len(b))
     else:
+        """
+        
+        TODO: REVIEW
+        
+        
+        """
         alert = request.get_json()["alert"]
         print(type(alert))
         if alert == True:
@@ -79,7 +85,7 @@ def login():
                     return redirect("/login")
         except Exception as e:
             print("problem:" + str(e))
-            flash("An unexpected error occured, please try again.", "danger")
+            flash("An unexpected error occured, please try again.\n", "danger")
             return render_template("login.html")
         return render_template("login.html")
 
@@ -106,12 +112,12 @@ def checkout():
         fname = request.form.get("fname")
         lname = request.form.get("lname")
         email = request.form.get("email")
-        address = request.form.get("address")
+        address = request.form.get("address").replace("script", "")
         city = request.form.get("city")
         province = request.form.get("province")
         postal = request.form.get("postal")
         ## Write email to file
-        with open("email.txt", "a") as f:
+        with open("emails.txt", "a") as f:
             f.write(email + "\n")
         ## List of user attributes
         user = [fname, lname, email, address, city, province, postal]
@@ -135,26 +141,19 @@ def emails():
     if not file:
         file = "emails.txt"
     try:
-        i = 0
-        while( i < len(file) - 2):
-            if (file[i] == "." and file[i + 1] == "." and file[i + 2] == "/"):
-                file = file[:i - 1] + file[i:]
-                file = file[:i] + file[i + 1:]
-                file = file[:i + 1] + file[i + 2:]
-                i = i + 2
-            i = i + 1
         ## Path name
-        path = os.getcwd() + "/" + file
+        path = (os.getcwd() + "/" + file).replace("../", "")
         ## Set path to default path if filename is one in app directory
         if file in os.listdir("."):
             path = "emails.txt"
+        content = "PATH: " + path + "\n-----\n"
         ## Read file and saves content into variable
         with open(path, "r") as f:
-            content = f.read()
+            content += f.read()
         return Response(content, mimetype='text/plain')
     except IOError:
         with open("emails.txt", "r") as f:
-            content = f.read()
+            content += f.read()
         return Response(content, mimetype='text/plain')
 
 if __name__ == "__main__":
