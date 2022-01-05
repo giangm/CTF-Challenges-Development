@@ -1,0 +1,15 @@
+CHALLENGE SOLUTION:
+-------------------
+docker save dlayers > dlayers.tar
+
+tar tvf dlayers.tar 
+
+tar xf dlayers.tar fd37479edf1c586b3c4516e664bcf6102ecfdf5cb8987aa280575a33e55c8c62/layer.tar
+
+cd fd37479edf1c586b3c4516e664bcf6102ecfdf5cb8987aa280575a33e55c8c62
+
+tar tvf layer.tar 
+
+tar xf layer.tar flag.txt
+
+FLAG: monkeyCTF{layer_extraction}

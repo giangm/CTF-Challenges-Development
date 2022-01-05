@@ -1,0 +1,3 @@
+CHALLENGE HINT:
+---------------
+1. Docker layers
