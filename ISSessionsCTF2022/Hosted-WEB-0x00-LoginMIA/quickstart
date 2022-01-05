@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t loginmia docker_images/
+docker run --rm --privileged -p 8000:8000 -d loginmia
