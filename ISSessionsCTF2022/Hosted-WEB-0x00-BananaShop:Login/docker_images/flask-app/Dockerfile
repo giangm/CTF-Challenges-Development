@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR /CTF/flask/app
 
-COPY . /CTF/flask//app
+COPY . /CTF/flask/app
 
 COPY flag.txt /
 
