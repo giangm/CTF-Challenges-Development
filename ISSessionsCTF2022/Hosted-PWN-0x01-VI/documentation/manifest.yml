@@ -3,7 +3,7 @@
 #####################################
 challenge:
   # challenge name as it should appear to the players - required - 20 characters max
-  name: "0x07: UID"
+  name: "0x01: VI"
 
   # challenge author - required
   author: Minh Giang
@@ -32,7 +32,7 @@ challenge:
   # documentation/solution.txt. Flags are case-sensitive but can be 
   # made case-insensitive through the CTFd GUI.
   flags:                              
-    - monkeyCTF{notsaltyhashlist}
+    - monkeyCTF{5up3r_dup3r_53cr3t_pa55w0rd}
 
   # helpful tags to focus the player's attention
   tags:               

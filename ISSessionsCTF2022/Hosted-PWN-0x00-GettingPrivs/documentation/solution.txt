@@ -15,4 +15,4 @@ ATTACK MACHINE:
 ---------------
 nc -lvnp 8000
 
-FLAG: monkeyCTF{http_tran5f3r_t0_wg3t_f!13}
+FLAG: monkeyCTF{badsudoprivs}

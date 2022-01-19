@@ -27,4 +27,4 @@ with open("hashes.txt", "r") as f:
                 break
 
 
-FLAG: monkeyCTF{nonsaltyhashlist}
+FLAG: monkeyCTF{notsaltyhashlist}

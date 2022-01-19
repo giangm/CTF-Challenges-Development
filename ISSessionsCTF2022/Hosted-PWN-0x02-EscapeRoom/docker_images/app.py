@@ -3,9 +3,8 @@ import sys
 import subprocess as sp
 
 def main():
-    black_list = ["cat", "'", ";", "&", "|", "head", "less", "wget"]
+    black_list = ["cat", "'", ";", "&", "|", "head", "less", "wget", "nl", "tail", "strings"]
 
-    os.system("ls -al")
     while True:
         filename = str(input("monkey@monkey:/home/monkey$ file "))
         catch = [i in filename for i in black_list]
