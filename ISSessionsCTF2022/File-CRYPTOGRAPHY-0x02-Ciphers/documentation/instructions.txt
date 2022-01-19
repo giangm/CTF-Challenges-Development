@@ -1,3 +1,0 @@
-Can you decrypt each string to figure out what they mean?
-
-NOTE: The decrypted string is the key to finding the next string

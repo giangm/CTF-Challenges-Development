@@ -1,4 +1,0 @@
-CHALLENGE HINTS:
-----------------
-1. What is directory traversal?
-2. ....// == ../../

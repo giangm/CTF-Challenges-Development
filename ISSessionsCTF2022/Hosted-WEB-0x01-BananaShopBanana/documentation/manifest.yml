@@ -3,13 +3,13 @@
 #####################################
 challenge:
   # challenge name as it should appear to the players - required - 20 characters max
-  name: "0x00: Keylogger"
+  name: "0x01: BananaShopBanana"
 
   # challenge author - required
   author: Minh Giang
 
   # challenge category as it should appear to the players - required - 20 characters max
-  category: CRYPTOGRAPHY
+  category: WEB
 
   # standard or dynamic
   type: dynamic
@@ -32,7 +32,7 @@ challenge:
   # documentation/solution.txt. Flags are case-sensitive but can be 
   # made case-insensitive through the CTFd GUI.
   flags:                              
-    - monkeyCTF{TROPICALPINEAPPLECOCONUTSMOOTHIE}
+    - monkeyCTF{5QL_uni0n_attack_t3ch}
 
   # helpful tags to focus the player's attention
   tags:               
